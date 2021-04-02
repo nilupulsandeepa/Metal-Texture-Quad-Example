@@ -9,9 +9,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    private var metalView: MetalView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        //Attach Metal View
+        self.metalView = MetalView(frame: self.view.frame)
+        self.view.addSubview(metalView)
     }
 
 
